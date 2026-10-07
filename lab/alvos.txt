@@ -1,0 +1,10 @@
+http://127.0.0.1:8099/vuln/unkeyed-header
+http://127.0.0.1:8099/vuln/hmo
+http://127.0.0.1:8099/vuln/hho
+http://127.0.0.1:8099/vuln/hmc
+http://127.0.0.1:8099/controle/vary
+http://127.0.0.1:8099/controle/erro-nao-armazenado
+http://127.0.0.1:8099/controle/sem-cache
+http://127.0.0.1:8099/controle/dinamico
+http://127.0.0.1:8099/recusa/query-ignorada
+http://127.0.0.1:8099/recusa/cache-mudo

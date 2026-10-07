@@ -1,0 +1,50 @@
+# Cabecalhos candidatos a entrada nao indexada (unkeyed input) — trilha de integridade.
+#
+# As sondas da trilha de disponibilidade (sobrescrita de metodo, cabecalho
+# sobredimensionado e metacaractere) sao geradas pelo proprio wcpscan e nao
+# precisam constar aqui.
+#
+# O valor enviado em cada cabecalho e derivado do nome, conforme a regra em
+# montar_sondas(): cabecalhos de URL ou caminho recebem um caminho com canario,
+# cabecalhos de porta recebem 1337, cabecalhos de esquema recebem http, e os
+# demais recebem <canario>.example.
+
+# --- encaminhamento de host e esquema ---
+X-Forwarded-Host
+X-Forwarded-Scheme
+X-Forwarded-Proto
+X-Forwarded-Port
+X-Forwarded-Server
+X-Forwarded-For
+X-Forwarded-Prefix
+X-Host
+X-Original-Host
+X-Originating-Host
+X-Real-IP
+Forwarded
+
+# --- reescrita de URL e de caminho ---
+X-Original-URL
+X-Rewrite-URL
+X-Override-URL
+X-Original-Path
+X-Envoy-Original-Path
+X-Request-URI
+
+# --- cabecalhos de borda e de proxy ---
+X-Proxy-Host
+X-Proxy-URL
+X-Backend-Host
+X-Backend-Server
+X-Server-Name
+X-Custom-IP-Authorization
+X-Original-Remote-Addr
+
+# --- cabecalhos de aplicacao frequentemente nao indexados ---
+X-Amz-Website-Redirect-Location
+X-Akamai-Edgescape
+X-Wap-Profile
+X-Api-Version
+X-Country-Code
+X-Locale
+X-Timezone
